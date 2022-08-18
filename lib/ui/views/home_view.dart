@@ -17,7 +17,7 @@ class _HomeViewState extends State<HomeView> {
         appBar: AppBar(
           title: const Text('Testing Get X'),
           centerTitle: true,
-          leading: Icon(Icons.menu),
+          leading: const Icon(Icons.menu),
         ),
         body: Obx(
           () => dataController.isDataLoad.value
@@ -26,7 +26,7 @@ class _HomeViewState extends State<HomeView> {
                   itemCount: dataController.contactModel!.data!.length,
                   itemBuilder: (context, index) {
                     return Padding(
-                        padding: EdgeInsets.only(top: 20),
+                        padding: const EdgeInsets.only(top: 20),
                         child: Center(
                             child: Text(
                                 '${dataController.contactModel!.data![index].firstName}')));

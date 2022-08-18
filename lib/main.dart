@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_fetchapi/core/constants/get_pages_contant.dart';
-import 'package:flutter_getx_fetchapi/core/constants/routes_page_constant.dart';
-import 'package:flutter_getx_fetchapi/ui/views/home_view.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -21,9 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      initialRoute: RouteConstant.homeView,
-      getPages: getPages,
-      home: const HomeView(),
+      initialRoute: '/loginview',
+      getPages: Routers.router,
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
